@@ -1,2 +1,2 @@
 # Minty
-Image Filtering and Effects webapp
+Image Filtering and Effects Web App
