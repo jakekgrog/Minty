@@ -42,6 +42,22 @@ document.addEventListener('click', e => {
             Caman('#canvas', img, function() {
                 this.vibrance(-5).render();
             });
+        }else if(e.target.classList.contains('exposure-add')){
+            Caman('#canvas', img, function() {
+                this.exposure(+5).render();
+            });
+        }else if(e.target.classList.contains('exposure-remove')){
+            Caman('#canvas', img, function() {
+                this.exposure(-5).render();
+            });
+        }else if(e.target.classList.contains('stackblur-add')){
+            Caman('#canvas', img, function() {
+                this.stackBlur(1).render();
+            });
+        }else if(e.target.classList.contains('stackblur-remove')){
+            Caman('#canvas', img, function() {
+                this.stackBlur(-1).render();
+            });
         } else if(e.target.classList.contains('vintage-add')){
             Caman('#canvas', img, function() {
                 this.vintage().render();
@@ -80,6 +96,26 @@ document.addEventListener('click', e => {
         else if(e.target.classList.contains('hermajesty-add')){
             Caman('#canvas', img, function() {
                 this.herMajesty().render();
+            });
+        }
+        else if(e.target.classList.contains('love-add')){
+            Caman('#canvas', img, function() {
+                this.love().render();
+            });
+        }
+        else if(e.target.classList.contains('orangepeel-add')){
+            Caman('#canvas', img, function() {
+                this.orangePeel().render();
+            });
+        }
+        else if(e.target.classList.contains('glowingsun-add')){
+            Caman('#canvas', img, function() {
+                this.glowingSun().render();
+            });
+        }
+        else if(e.target.classList.contains('sunrise-add')){
+            Caman('#canvas', img, function() {
+                this.sunrise().render();
             });
         }
     }
